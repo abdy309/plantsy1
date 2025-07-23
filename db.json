@@ -1,0 +1,40 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Aloe",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR308XVvAiO7KrUa3TLSS6_6gP38n3kQtBvPQ&s",
+      "price": 15.99
+    },
+    {
+      "id": 2,
+      "name": "ZZ Plant",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZilSL6qPDHG-Et84Pw_GzLoAi60g7TgzrSw&s",
+      "price": 25.98
+    },
+    {
+      "id": 3,
+      "name": "Snake Plant",
+      "image": ".https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9wCdCkhn3S3Cf-fM1IiCrf5JAF5rpoO40A&s",
+      "price": 22.5
+    },
+    {
+      "id": 4,
+      "name": "Peace Lily",
+      "image": ".https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISgdaY0ePZWyTXCLGD8yQv-N119WwZi267tQw9tqVpPjnbEmik1khwHFHFOvZtDnFlFtWIpDngR_OXMUcqIT_jSwQ4qPh5rYoNI93dJtcYw",
+      "price": 18.75
+    },
+    {
+      "id": "ee8b",
+      "name": "gg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9wCdCkhn3S3Cf-fM1IiCrf5JAF5rpoO40A&s",
+      "price": 45
+    },
+    {
+      "id": "1860",
+      "name": "add",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9wCdCkhn3S3Cf-fM1IiCrf5JAF5rpoO40A&s",
+      "price": 34
+    }
+  ]
+}
