@@ -15,13 +15,13 @@
     {
       "id": 3,
       "name": "Snake Plant",
-      "image": ".https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9wCdCkhn3S3Cf-fM1IiCrf5JAF5rpoO40A&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKg8O9o03XNfEVaESq7NwPwaZYRyNVTV9v_A&s",
       "price": 22.5
     },
     {
       "id": 4,
       "name": "Peace Lily",
-      "image": ".https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISgdaY0ePZWyTXCLGD8yQv-N119WwZi267tQw9tqVpPjnbEmik1khwHFHFOvZtDnFlFtWIpDngR_OXMUcqIT_jSwQ4qPh5rYoNI93dJtcYw",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISgdaY0ePZWyTXCLGD8yQv-N119WwZi267tQw9tqVpPjnbEmik1khwHFHFOvZtDnFlFtWIpDngR_OXMUcqIT_jSwQ4qPh5rYoNI93dJtcYw",
       "price": 18.75
     },
     {
