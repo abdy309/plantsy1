@@ -50,11 +50,26 @@ function App() {
   const toggleSoldOut = (id) => {
     setPlants((prevPlants) =>
       prevPlants.map((plant) =>
-        plant.id === id
-          ? { ...plant, soldOut: !plant.soldOut }
-          : plant
+        plant.id === id ? { ...plant, soldOut: !plant.soldOut } : plant
       )
     );
+  };
+
+  // Delete a plant
+  const handleDelete = (id) => {
+    fetch(`http://localhost:6001/plants/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        if (res.ok) {
+          setPlants((prevPlants) =>
+            prevPlants.filter((plant) => plant.id !== id)
+          );
+        } else {
+          console.error("Failed to delete plant.");
+        }
+      })
+      .catch((err) => console.error("Error deleting plant:", err));
   };
 
   // Filter plants by search term
@@ -132,24 +147,44 @@ function App() {
               <img
                 src={plant.image}
                 alt={plant.name}
-                style={{ width: 80, height: 80, objectFit: "cover", marginRight: 20 }}
+                style={{
+                  width: 80,
+                  height: 80,
+                  objectFit: "cover",
+                  marginRight: 20,
+                }}
               />
               <div style={{ flex: 1 }}>
                 <h4 style={{ margin: 0 }}>{plant.name}</h4>
                 <p style={{ margin: "4px 0" }}>${plant.price.toFixed(2)}</p>
-                <button
-                  onClick={() => toggleSoldOut(plant.id)}
-                  style={{
-                    padding: "4px 10px",
-                    backgroundColor: plant.soldOut ? "#dc3545" : "#28a745",
-                    color: "white",
-                    border: "none",
-                    borderRadius: 3,
-                    cursor: "pointer",
-                  }}
-                >
-                  {plant.soldOut ? "Sold Out" : "Mark as Sold Out"}
-                </button>
+                <div style={{ display: "flex", gap: "10px" }}>
+                  <button
+                    onClick={() => toggleSoldOut(plant.id)}
+                    style={{
+                      padding: "4px 10px",
+                      backgroundColor: plant.soldOut ? "#dc3545" : "#28a745",
+                      color: "white",
+                      border: "none",
+                      borderRadius: 3,
+                      cursor: "pointer",
+                    }}
+                  >
+                    {plant.soldOut ? "Sold Out" : "Mark as Sold Out"}
+                  </button>
+                  <button
+                    onClick={() => handleDelete(plant.id)}
+                    style={{
+                      padding: "4px 10px",
+                      backgroundColor: "#6c757d",
+                      color: "white",
+                      border: "none",
+                      borderRadius: 3,
+                      cursor: "pointer",
+                    }}
+                  >
+                    Delete
+                  </button>
+                </div>
               </div>
             </div>
           ))
